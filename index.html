@@ -2,16 +2,63 @@
 
 <html lang="en">
     <head>
-        <title>Personal Site</title>
+        <title>Oul Nahtanoj's Website 🥴</title>
         <!-- add CSS -->
         <link href="styles.css" rel="stylesheet">
     </head>
 
-    <body>
-      <h1>Template</h1>
-      <div>
-        <p>Welcome! Create your own personal site here.</p>
+    <body onload="startMsg()">
+      <h1 id="title"><u>BingBong.com</u> 🤟</h1>
+      <marquee id="welcome" class="fancy" behavior="alternate" onmouseover="scared()" onmouseout="relieved()"></marquee>
+      <img class="images" src="images/IMG_4010.jpg" alt="Lowell Bell in Snow">
+      <br>
+      <div class="center">
+        <h2 class="lush">Get Your Name Reversed!</h2>
+        <p>Enter your name in the form below and from now on be greeted with your new, reversed name.</p>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <input type="submit" value="Submit">
+        </form>
+
+        <h2 class="cold">More Blizzard Pics</h2>
+        <p>Here are some more shots of the blizzard that I took that I thought were kinda fire.<br>
+          Roughly in order from most 🔥 to least (but still 🔥 nonetheless).</p>
+        <ol>
+          <li><strong>Harvard Business School Bridge from the Business School Side</strong><br><img src="images/IMG_4021.jpg" alt="HBS Bridge from HBS Side" width=50%></li><br>
+          <li><strong>Between Lowell and Winthrop</strong><br><img src="images/IMG_4013.jpg" alt="Between Lowell and Winthrop" width=50%></li><br>
+          <li><strong>Lowell Bell Tower from Entryway A</strong><br><img src="images/IMG_4004.jpg" alt="Lowell Bell Tower from A" width=50%></li><br>
+          <li><strong>Pathway from Lowell Entryway A to B</strong><br><img src="images/IMG_4011.jpg" alt="Lowell A to B Path" width=50%></li><br>
+        </ol>
+        <p><u>ALSO</u>: Here's a video I took during the storm.<br><video width=50% controls><source src="videos/IMG_3998.mp4" type="video/mp4"></video></p>
+        
+        <p><u>BONUS</u>: I didn't take this, but my friend took this of me.<br><img src="images/IMG_4037.png" alt="He Dead" width=25%></p>
+        
+        <br>
+
+        <h2 class="hot">Lowell Dogs!</h2>
+        <p>If you needed even more reasons to see why Lowell is obviously the best house,<br>
+          meet some of the Lowell dogs! Feel free to pet them.</p>
+        <ul>
+          <li><strong class="dogs">Spencer:</strong> mini Golden Retriever; energetic and playful; a truly perfect boy.<br>
+            <button onclick="spencer()">Pet Spencer!</button>
+            <br># times you've pet Spencer: <strong id="spencer">0 -- give him a pet!</strong></li><br>
+            <li><strong class="dogs">Cannoli:</strong> adorable Chow-Chow; shy but very curious; a good girl.<br>
+              <button onclick="cannoli()">Pet Cannoli!</button>
+              <br># times you've pet Cannoli: <strong id="cannoli">0 -- give her a pet!</strong></li><br>
+          <li><strong class="dogs">Scout:</strong> awesome mix with a dope coat color; so chill; a good boy.<br>
+            <button onclick="scout()">Pet Scout!</button>
+            <br># times you've pet Scout: <strong id="scout">0 -- give him a pet!</strong></li>
+        </ul>
       </div>
+
+      <br>
+
+      <footer class="center">
+        <p>Author: Jonathan Luo</p>
+        <p><a href="mailto:jcluo@college.harvard.edu">jcluo@college.harvard.edu</a></p>
+        <p>Honestly this is just for the tag count lmao.<br>Copyright © 2022 BingBong.com</p>
+      </footer>
     </body>
     <!-- add JS -->
     <script src="javascript.js"></script>

@@ -1,1 +1,46 @@
 /* Create CSS Page Here! */
+* {
+    font-family: Georgia;
+}
+
+#title {
+    color: blue;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border: 5px solid navy;
+}
+
+.fancy {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+}
+
+.cold {
+    color: cyan;
+}
+
+.hot {
+    color: rgb(224, 102, 102);
+}
+
+.lush {
+    color: rgb(76, 201, 76);
+}
+
+.dogs {
+    color: rgb(204, 143, 12);
+}
+
+.specialName {
+    color: rgb(216, 16, 216);
+}
